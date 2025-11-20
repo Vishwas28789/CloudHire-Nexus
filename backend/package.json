@@ -1,0 +1,60 @@
+{
+  "name": "cloudhire-nexus-backend",
+  "version": "1.0.0",
+  "description": "Enterprise-grade automatic cloud job hunting system backend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "worker": "node src/workers/jobWorker.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.js",
+    "migrate": "node src/database/migrate.js"
+  },
+  "keywords": [
+    "job-hunter",
+    "automation",
+    "cloud-jobs",
+    "resume",
+    "ai"
+  ],
+  "author": "CloudHire Nexus",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "better-sqlite3": "^9.2.2",
+    "pg": "^8.11.3",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.6.1",
+    "pdf-lib": "^1.17.1",
+    "html-pdf-node": "^1.0.8",
+    "nodemailer": "^6.9.7",
+    "node-cron": "^3.0.3",
+    "bullmq": "^5.1.0",
+    "ioredis": "^5.3.2",
+    "openai": "^4.20.1",
+    "anthropic": "^0.9.1",
+    "google-generative-ai": "^0.1.1",
+    "winston": "^3.11.0",
+    "joi": "^17.11.0",
+    "rate-limiter-flexible": "^4.0.0",
+    "user-agents": "^1.1.0",
+    "validator": "^13.11.0",
+    "sharp": "^0.33.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.55.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
