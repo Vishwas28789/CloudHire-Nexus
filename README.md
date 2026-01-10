@@ -1,1 +1,1 @@
-# CloudHire-Nexus
+Cloud based industrial hazad detection
